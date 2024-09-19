@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    android:background="#355245"
+
+    android:orientation="vertical"
+    tools:context=".AddReminderActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+
+        android:layout_gravity="start"
+        app:srcCompat="@drawable/back" />
+    <!-- TimePicker for selecting reminder time -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="66dp"
+        android:layout_height="wrap_content">
+
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:numbersBackgroundColor="#AFC1B6"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner" />
+
+    <!-- EditText for entering reminder message -->
+    <EditText
+        android:id="@+id/editTextReminder"
+        android:layout_width="match_parent"
+        android:textColor="#AFC1B6"
+        android:layout_height="wrap_content"
+        android:hint="Enter reminder message" />
+
+    <!-- Save button to save reminder -->
+    <Button
+        android:id="@+id/buttonSaveReminder"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#AFC1B6"
+        android:layout_marginTop="26dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Save" />
+
+    </LinearLayout>
+</LinearLayout>
